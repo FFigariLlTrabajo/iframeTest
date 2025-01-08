@@ -10,7 +10,11 @@
 </body>
 <script>
    document.getElementById("hola").innerText = "chau";
-  var parentUrl = window.parent.location;
+   try {
+     var parentUrl = window.parent.location;
+   } catch (error) {
+    console.log(error)
+   }
   // Muestra la URL del padre en una alerta
   //alert('URL del padre: ' + parentUrl);
   document.getElementById("hola").innerText = parentUrl;
