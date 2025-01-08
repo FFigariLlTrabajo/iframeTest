@@ -6,11 +6,11 @@
   <title>Document</title>
 </head>
 <body>
-  <h1 id="hola">HOLA</h1>
+  <h1 id="hola">HOLA3</h1>
 </body>
 <script>
    document.getElementById("hola").innerText = "chau";
-  const parentUrl = window.parent.location.href;
+  var parentUrl = window.parent.location;
   // Muestra la URL del padre en una alerta
   //alert('URL del padre: ' + parentUrl);
   document.getElementById("hola").innerText = parentUrl;
